@@ -1,0 +1,25 @@
+{
+  "name": "example-ecommerce-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend for my Example-Ecommerce school project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bc1bb/example-ecommerce-api.git"
+  },
+  "author": "bc1bb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bc1bb/example-ecommerce-api/issues"
+  },
+  "homepage": "https://github.com/bc1bb/example-ecommerce-api#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
