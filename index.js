@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require("path");
 const app = express();
 require('dotenv').config()
 
@@ -18,9 +19,11 @@ console.log("Starting listener on " + host + ":" + port + "...");
 
 app.listen(port, host);
 
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
-    res.redirect("https://github.com/bc1bb/example-ecommerce-api");
-});
+    res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+})
 
 
-
+module.exports = app
